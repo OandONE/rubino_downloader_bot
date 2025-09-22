@@ -9,7 +9,6 @@ user_name_bot = "@rubino_downloader01_bot"
 
 @bot.on_message(filters=filters.and_filter(filters.is_text(),filters.is_user()))
 async def rubino_dow(msg:Update):
-    print(msg)
     if msg.text.startswith("https://rubika.ir/post/"):
         await msg.reply("در حال جستجو ...")
         link_post = msg.text
